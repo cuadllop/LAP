@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+
+<div id="loanRequestApplication" class="codeRunner">
+
+    <span class="alert-success" data-bind="text:serverReply,visible:serverReply!=undefined && serverReply!=''"></span>
+    <span class="alert-danger" data-bind="text: error, visible:error==''"></span>
+
+
+    <h3> Pending requests to be rated </h3>
+
+    <span class="label-warning" data-bind="visible:myLoanRequests().length==0">No request pending to be approved</span>
+
+    <div data-bind="visible:myLoanRequests().length>0">
+
+        <h3>My requests</h3>
+        <br />
+        <table>
+            <thead>
+                <tr><th>Submit date</th><th>Status</th><th>Amount requested</th></tr>
+            </thead>
+            <tbody data-bind=" foreach: myLoanRequests">
+                <tr>
+                    <td data-bind="text: SubmitDate" />
+                    <td>
+                        <select name="selectStatus" data-bind="value: Status,attr:{ id: 'select_' + $index() }">
+                            <option value="0">Pending of Loan Engine process</option>
+                            <option value="1">Engine approval</option>
+                            <option value="2">Engine denied</option>
+                            <option value="3">Approve</option>
+                            <option value="4">Denied</option>
+                        </select>
+                    </td>
+                    <td data-bind="text:Amount" />
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <button id="SubmitApprovalBtn" data-bind="click: save">Submit</button>
+        </form>
+
+    </div>
+    <script src='@Url.Content("~/Scripts/LoanAdminApprovalViewModel.js")' type="text/javascript"></script>
+</div>

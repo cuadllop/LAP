@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    <button id="runLoanEngineAllPendingRequestsBtn" data-bind="click: submit">Evaluate all pending applications by Loan Engine</button>
+    <button id="remoAllExistingLoanTypeBtn" data-bind="click: submitDeleteAllLoanTYpes">Remove all existing loan types</button>
+</div>
+
+<script src='@Url.Content("~/Scripts/BackOfficeViewModel.js")' type="text/javascript"></script>

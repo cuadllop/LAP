@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+
+<div id="loanRequestApplication" class="codeRunner">
+
+    <span class="alert-success" data-bind="text:serverReply,visible:serverReply!=undefined && serverReply!=''"></span>
+    <span class="alert-danger" data-bind="text: error, visible:error==''"></span>
+
+    <h3> Personal information </h3>
+    Name : <input id="CustomerName" data-bind="value: customerName" />
+    Email: <input id="CustomerEmail"  data-bind="value: email" />
+
+    <button id="UpdateSearchForCustomerEmail" data-bind="click:UpdateListRequests">Update search</button>
+
+    <h3>Choose the loan type you want to apply to</h3>
+    <br />
+    <select id="CustomerLoanTypeSelection" data-bind="value:loanSelected, click: getLoanType, options: loanTypesListIds(), options:loanTypesList, optionsText: 'Name', optionsValue:'Id' "></select> 
+
+    <br /> 
+    <span data-bind="visible: loanName==''">No loan loaded, please choose a type to beging filling the application.</span>
+    <br />
+
+    <div data-bind="visible: loanName!=''">
+        <h3 data-bind="text: setBriefing"></h3>
+        
+        <form>
+            <div>
+                <span class="alert-danger" data-bind="visible: validAmount()">Please write the amount of money you want to ask for.</span>                
+            </div>
+            <br />
+            <div id="amountDiv">
+                Amount of money to request: <input id="Amount" type="number" required data-bind="value: amount" placeholder="How much money to ask" /><br />
+            </div>
+
+            <div data-bind="visible: additionalFields().Count>0">
+                <h4>Additional fields</h4>
+
+                <ul data-bind="foreach: additionalFields">
+                    <li>
+                        <span data-bind="value: fieldName" />
+                        <input required data-bind="value: fieldType" />
+                    </li>
+                </ul>
+            </div>
+
+            <button id="SubmitRequest" data-bind="click: save, disable: validAmount()">Submit</button>
+        </form>
+    </div>
+
+    <div data-bind="visible:(myLoanRequests!=undefined) && myLoanRequests().length>0">
+
+        <h3>My requests</h3>
+        <br />
+        <table>
+            <thead>
+                <tr><th>Submit date</th><th>Status</th></tr>
+            </thead>
+            <tbody data-bind=" foreach: myLoanRequests">
+                <tr>
+                    <td data-bind="text: SubmitDate" />
+                    <td required data-bind="if: Status=='0'">Pending of approval</td>
+                    <td required data-bind="if: Status=='1'">Pending of approval</td>
+                    <td required data-bind="if: Status=='2'">Pending of approval</td>
+                    <td required data-bind="if: Status=='3'">Denied</td>
+                    <td required data-bind="if: Status=='4'">Granted</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src='@Url.Content("~/Scripts/LoanRequestViewModel.js")' type="text/javascript"></script>
+</div>

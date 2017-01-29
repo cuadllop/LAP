@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAP", "LAP\LAP.csproj", "{E4F8F03C-A64A-40ED-A0B9-8DEEFE2B5D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntTests", "IntTests\IntTests.csproj", "{033D2BFA-5DC9-4F4C-8CD1-7424F3CC938D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanEngine", "LoanEngine\LoanEngine.csproj", "{AB244315-5B01-4D89-BC95-EFBA0D345FD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScoreDrivers", "ScoreDrivers", "{7E81153A-EA05-476E-A40C-244BA7D74C32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeScoreDriver", "FakeScoreDriver\FakeScoreDriver.csproj", "{85E33463-7533-4526-8C08-8E17ACBC2874}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TESTS", "TESTS", "{7F03CFEA-88F8-4F4F-A017-5109B5943035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endjin.SpecFlow.Selenium.Framework.Net45", "Endjin.SpecFlow.Selenium.Framework.Net45\Endjin.SpecFlow.Selenium.Framework.Net45.csproj", "{1D68A4C5-4322-4276-901F-DBE7FA1310AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TEST_UTILS", "TEST_UTILS", "{FC1E42E0-D5C0-4B9E-9E53-28BC9C56ADDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E042E3FB-0F4A-4391-B943-7FD3217CB5C1}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Tests", "UI_Tests\UI_Tests.csproj", "{038D72E6-B2C4-4FB1-823C-93E1F21016D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F5F387D-9E54-4D7F-8AA8-2039B30729F3}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4F8F03C-A64A-40ED-A0B9-8DEEFE2B5D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4F8F03C-A64A-40ED-A0B9-8DEEFE2B5D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4F8F03C-A64A-40ED-A0B9-8DEEFE2B5D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4F8F03C-A64A-40ED-A0B9-8DEEFE2B5D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033D2BFA-5DC9-4F4C-8CD1-7424F3CC938D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033D2BFA-5DC9-4F4C-8CD1-7424F3CC938D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033D2BFA-5DC9-4F4C-8CD1-7424F3CC938D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033D2BFA-5DC9-4F4C-8CD1-7424F3CC938D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB244315-5B01-4D89-BC95-EFBA0D345FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB244315-5B01-4D89-BC95-EFBA0D345FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB244315-5B01-4D89-BC95-EFBA0D345FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB244315-5B01-4D89-BC95-EFBA0D345FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85E33463-7533-4526-8C08-8E17ACBC2874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85E33463-7533-4526-8C08-8E17ACBC2874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85E33463-7533-4526-8C08-8E17ACBC2874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85E33463-7533-4526-8C08-8E17ACBC2874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D68A4C5-4322-4276-901F-DBE7FA1310AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D68A4C5-4322-4276-901F-DBE7FA1310AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D68A4C5-4322-4276-901F-DBE7FA1310AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D68A4C5-4322-4276-901F-DBE7FA1310AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{038D72E6-B2C4-4FB1-823C-93E1F21016D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038D72E6-B2C4-4FB1-823C-93E1F21016D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038D72E6-B2C4-4FB1-823C-93E1F21016D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038D72E6-B2C4-4FB1-823C-93E1F21016D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{033D2BFA-5DC9-4F4C-8CD1-7424F3CC938D} = {7F03CFEA-88F8-4F4F-A017-5109B5943035}
+		{85E33463-7533-4526-8C08-8E17ACBC2874} = {7E81153A-EA05-476E-A40C-244BA7D74C32}
+		{1D68A4C5-4322-4276-901F-DBE7FA1310AA} = {FC1E42E0-D5C0-4B9E-9E53-28BC9C56ADDD}
+		{FC1E42E0-D5C0-4B9E-9E53-28BC9C56ADDD} = {7F03CFEA-88F8-4F4F-A017-5109B5943035}
+		{038D72E6-B2C4-4FB1-823C-93E1F21016D3} = {7F03CFEA-88F8-4F4F-A017-5109B5943035}
+	EndGlobalSection
+EndGlobal

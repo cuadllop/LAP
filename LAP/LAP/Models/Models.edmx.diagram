@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e067cd2cfa80412c8fbf9aa686e8cfcd" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model1.LoanType" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="Model1.LoanRequest" Width="1.5" PointX="2.875" PointY="0.5" />
+        <EntityTypeShape EntityType="Model1.User" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="Model1.Role" Width="1.5" PointX="8" PointY="1" />
+        <AssociationConnector Association="Model1.UserLoanRequest" />
+        <AssociationConnector Association="Model1.LoanTypeLoanRequest" />
+        <EntityTypeShape EntityType="Model1.ScoreEngine" Width="1.5" PointX="0.5" PointY="3.5" />
+        <EntityTypeShape EntityType="Model1.SystemConfiguration" Width="1.5" PointX="6" PointY="3.5" />
+        <EntityTypeShape EntityType="Model1.FormFields" Width="1.5" PointX="5.125" PointY="6" />
+        <AssociationConnector Association="Model1.LoanRequestFormFields" />
+        <AssociationConnector Association="Model1.RoleUser" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

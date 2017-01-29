@@ -1,0 +1,20 @@
+﻿{
+  "web_app_name": "LAP",
+  "website_url": "https://cpanel-ncbs-devrm.neccloudhub.com:1443/",
+  "web_driver_type": "Chrome",
+  "delay_close": 0,
+  "accept_untrusted_certificates": true,
+  "implicitly_wait": 30,
+  "page_load_timeout": 30,
+  "script_timeout": 3600,
+  "auto_start_local_iis": false,
+  "hide_local_iis": false,
+  "hide_command_prompt_window": false,
+  "run_using_sauce_labs": false,
+  "sauce_labs_remote_browser": "",
+  "sauce_labs_remote_browser_version": "",
+  "sauce_labs_remote_url": "",
+  "sauce_labs_remote_key": "",
+  "sauce_labs_remote_platform": "",
+  "sauce_labs_remote_username": ""
+}

@@ -1,0 +1,46 @@
+﻿
+@{    
+    ViewBag.Title = "Index";
+}
+<h2>Index</h2>
+
+<div id="AddNewLoanType" class="codeRunner">
+    <span class="alert-success" data-bind="text:serverReply,visible:serverReply!=undefined && serverReply!=''"></span>
+    <span class="alert-danger" data-bind="text: error, visible:error==''"></span>
+    <h3>New loan</h3>
+
+        Name of the loan: <input id="NewLoanName" required data-bind="value: loanName" placeholder="What will be the name of the model?" /><br />
+
+    <h3>Add a new field</h3>
+    <form data-bind="submit: addAdditionalField">
+        Type of field: <select id="NewFieldTypeSelect" data-bind="value: newFieldType" required placeholder="What will be the type of the field?">
+    <option value="textbox">Textbox</option>
+    <option value="Checkbox">Checkbox</option>
+    <option value="Select">Select</option>
+    </select>
+    <br />
+    <h4>Additional fields</h4>
+
+    <br />
+        Name of field: <input id="NewFieldNameInput" data-bind="value: newFieldName" required placeholder="What will be the name of the field?" /><br />
+
+        <button id="AddNewFieldBtn" type="submit">Add</button>
+    </form>
+    <ul data-bind="foreach: additionalFields, visible: additionalFields().length > 0">
+        <li>
+            <input required data-bind="value: fieldName" />
+            <select required data-bind="value: fieldType">
+                <option value="textbox">Textbox</option>
+                <option value="Checkbox">Checkbox</option>
+                <option value="Select">Select</option>
+            </select>
+            <a href="#" data-bind="click: $parent.removeAdditionalField">Delete</a>
+        </li>
+    </ul>
+
+    <form>
+        <button id="AddNewLoanBtn" data-bind="click: save,disable: loanName()==undefined || loanName()==''">Submit Loan type</button>
+    </form>
+
+    <script src='@Url.Content("~/Scripts/LoanTypeViewModel.js")' type="text/javascript"></script>
+</div>
