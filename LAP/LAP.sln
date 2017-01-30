@@ -29,11 +29,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E042E3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_Tests", "UI_Tests\UI_Tests.csproj", "{038D72E6-B2C4-4FB1-823C-93E1F21016D3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F5F387D-9E54-4D7F-8AA8-2039B30729F3}"
-	ProjectSection(SolutionItems) = preProject
-		Readme.txt = Readme.txt
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
