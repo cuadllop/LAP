@@ -7,7 +7,7 @@
 
     function LoanRequest(data) {
         this.AdditionalFields = ko.observable(data.additionalFields);
-        this.Status = 0;
+        this.Status = data.Status;
         this.Amount = ko.observable(data.amount);
         if (data.SubmitDate != undefined)
             this.SubmitDate = data.SubmitDate;
