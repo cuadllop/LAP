@@ -5,8 +5,8 @@
 
 <h2>Index</h2>
 <div>
-    <button id="runLoanEngineAllPendingRequestsBtn" data-bind="click: submit">Evaluate all pending applications by Loan Engine</button>
-    <button id="remoAllExistingLoanTypeBtn" data-bind="click: submitDeleteAllLoanTYpes">Remove all existing loan types</button>
+    <button id="runLoanEngineAllPendingRequestsBtn" title="Call the engine to rate Loan Requests pending to be rated. After this, Check as Under Approval the state of each Loan Request." data-bind="click: submit">Evaluate all pending applications by Loan Engine</button>
+    <button id="remoAllExistingLoanTypeBtn" title="Delete all Loan Types that do not have Loan Requests associated" data-bind="click: submitDeleteAllLoanTYpes">Remove all existing loan types</button>
 </div>
 
 <script src='@Url.Content("~/Scripts/BackOfficeViewModel.js")' type="text/javascript"></script>
