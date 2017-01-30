@@ -16,6 +16,7 @@
     using OpenQA.Selenium.PhantomJS;
     using OpenQA.Selenium.Remote;
     using OpenQA.Selenium.Safari;
+    using System.IO;
 
     #endregion
 
@@ -32,8 +33,8 @@
         {
             //var service = ChromeDriverService.CreateDefaultService();
             //service.HideCommandPromptWindow = session.HideCommandPromptWindow;
-
-            return new ChromeDriver(@"C:\Users\jmcuadrado\Documents\Visual Studio 2013\Projects\LAP\Endjin.SpecFlow.Selenium.Framework.Net45\");
+            string startupPath = Environment.CurrentDirectory;
+            return new ChromeDriver(startupPath+@"\LAP\Endjin.SpecFlow.Selenium.Framework.Net45\");
         }
 
         private static IWebDriver CreateDriver(NavigatorSessionParameters session)
