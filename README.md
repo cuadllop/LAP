@@ -95,3 +95,8 @@ This application corresponds to the logic provided in the State of Work.
 		2. SQL Server 2008R2 or later
 		3. Specflow plugin installed in Visual Studio
 		4. "Nunit 3 Adapter" plugin installed in Visual Studio (in order to see Nunit generated tests in the Test Explorer Window of Visual Studio)
+		
+	Current points to take into consideration:
+		- Custom fields for Loan Types are being saved on configuration, but not rendered when the customer applies 
+		- "UI_" tests must be executed after the Project is debugged in backoffice (Control + F5)
+	
