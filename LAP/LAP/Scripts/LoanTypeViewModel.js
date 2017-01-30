@@ -40,13 +40,13 @@
 
             var serializedAdditionalFIelds = JSON.stringify(ko.toJSON(this.additionalFields()))
             var lt = new LoanType({ fieldName: this.loanName(), additionalFields: serializedAdditionalFIelds });
-            debugger;
+
             $.ajax("/LoanTypeAdmin/Create", {
                 data: ko.toJSON(lt),
                 type: "post",
                 contentType: "application/json",
                 success: function (result) {
-                    debugger;
+
                     if (result != undefined && result != "")
                     {
                         self.loanName("");

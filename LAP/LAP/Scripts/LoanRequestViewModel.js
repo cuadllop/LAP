@@ -82,7 +82,7 @@
             { 
                 var serializedAdditionalFIelds = JSON.stringify(ko.toJSON(this.additionalFields()))
                 var lr = new LoanRequest({ additionalFields: serializedAdditionalFIelds, amount:this.amount() });
-                debugger;
+
                 $.ajax("/LoanRequests/Create", {
                     data: ko.toJSON(lr),
                     type: "post",
