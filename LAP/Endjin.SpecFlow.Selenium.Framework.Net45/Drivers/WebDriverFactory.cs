@@ -33,8 +33,8 @@
         {
             //var service = ChromeDriverService.CreateDefaultService();
             //service.HideCommandPromptWindow = session.HideCommandPromptWindow;
-            string startupPath = Environment.CurrentDirectory;
-            return new ChromeDriver(startupPath+@"\LAP\Endjin.SpecFlow.Selenium.Framework.Net45\");
+            string startupPath = System.AppDomain.CurrentDomain.BaseDirectory;
+            return new ChromeDriver(startupPath+@"..\..\..\Endjin.SpecFlow.Selenium.Framework.Net45\");
         }
 
         private static IWebDriver CreateDriver(NavigatorSessionParameters session)
